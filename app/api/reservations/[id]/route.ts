@@ -1,0 +1,2 @@
+import { db } from '@/lib/db'
+export async function DELETE(_:Request,{params}:{params:Promise<{id:string}>}){const {id}=await params;await db.execute(`CREATE TABLE IF NOT EXISTS reservations (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, phone TEXT NOT NULL, date TEXT NOT NULL, time TEXT NOT NULL, party_size INTEGER NOT NULL, status TEXT NOT NULL DEFAULT 'confirmed', created_at TEXT DEFAULT (datetime('now')))`);await db.execute({sql:"UPDATE reservations SET status='cancelled' WHERE id=?",args:[id]});return Response.json({ok:true})}

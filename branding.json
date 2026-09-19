@@ -1,0 +1,13 @@
+{
+  "primaryColor": "#FFFFFF",
+  "secondaryColor": "#F9F7F4",
+  "backgroundColor": "#FFFFFF",
+  "textColor": "#1F2428",
+  "accentColor": "#D4422D",
+  "fontHeading": "Manrope",
+  "fontBody": "DM Serif Display",
+  "borderRadius": "0.25rem",
+  "logoText": "ReserveFlow",
+  "logoImageUrl": "https://vabacntbfcwhgkjqajcw.supabase.co/storage/v1/object/public/screenshots/projects/P-7XPBLX/logo.png",
+  "tone": "trustworthy"
+}
